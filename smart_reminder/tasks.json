@@ -1,9 +1,5 @@
 [
   {
-    "task": "grocery shopping",
-    "time": "12:00"
-  },
-  {
     "task": "buy milk",
     "time": "08:00"
   },
@@ -14,5 +10,21 @@
   {
     "task": "purchase",
     "time": "13:00"
+  },
+  {
+    "task": "buy sugar",
+    "time": "19:00"
+  },
+  {
+    "task": "do pod",
+    "time": "02:00"
+  },
+  {
+    "task": "buy chocolate",
+    "time": "07:30"
+  },
+  {
+    "task": "buy can",
+    "time": "09:00"
   }
 ]

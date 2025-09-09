@@ -6,7 +6,7 @@ import json
 import re
 import threading
 from plyer import notification
-import sys
+
 
 # --- Config ---
 TASK_FILE = "tasks.json"
@@ -135,11 +135,11 @@ def add_task(task_text, hour, minute):
     # Terminal feedback
     print(f"Added: '{task_text}' at {time_str}")
 
-    # 🔔 Desktop popup confirmation (same style as reminder)
+    # 🔔 Desktop popup confirmation
     notification.notify(
         title="✅ Task Added",
         message=f"{task_text} at {time_str}",
-        timeout=10  # keep same as reminder for reliability
+        timeout=10
     )
 
     # 🔊 Voice confirmation
@@ -223,9 +223,30 @@ def list_mics():
 
 # --- Main interactive loop ---
 def main():
+    # Startup voice
     speak("Smart Task Reminder started.")
+
+    # Startup popup + task count
+    try:
+        tasks = load_tasks()
+        count = len(tasks)
+        if count:
+            msg = f"System is running. You have {count} task(s) scheduled."
+            speak(f"You have {count} task scheduled." if count == 1 else f"You have {count} tasks scheduled.")
+        else:
+            msg = "System is running. No tasks yet."
+            speak("No tasks yet.")
+        notification.notify(
+            title="🟢 Smart Task Reminder",
+            message=msg,
+            timeout=5
+        )
+    except Exception as e:
+        print("Notification error:", e)
+
+    # Start background reminder checker
     stop_event = threading.Event()
-    checker_thread = threading.Thread(target=check_tasks, args=(stop_event,), daemon=True)
+    checker_thread = threading.Thread(target=check_tasks, args=(stop_event,), daemon=False)
     checker_thread.start()
 
     try:
