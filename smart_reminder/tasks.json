@@ -1,82 +1,34 @@
 [
-  {
-    "task": "watch movie",
-    "time": "01:00"
-  },
-  {
-    "task": "purchase",
-    "time": "13:00"
-  },
-  {
-    "task": "buy sugar",
-    "time": "19:00"
-  },
-  {
-    "task": "do pod",
-    "time": "02:00"
-  },
-  {
-    "task": "buy chocolate",
-    "time": "07:30"
-  },
-  {
-    "task": "buy can",
-    "time": "09:00"
-  },
-  {
-    "task": "buying grocery",
-    "time": "16:00"
-  },
-  {
-    "task": "buy chips",
-    "time": "04:00"
-  },
-  {
-    "task": "buy crackers",
-    "time": "04:50"
-  },
-  {
-    "task": "buy coffee",
-    "time": "05:15"
-  },
-  {
-    "task": "charge phone",
-    "time": "525:00"
-  },
-  {
-    "task": "buy t",
-    "time": "05:30"
-  },
-  {
-    "task": "go to school go to school",
-    "time": "05:45"
-  },
-  {
-    "task": "go to school",
-    "time": "05:55"
-  },
-  {
-    "task": "go to shop",
-    "time": "06:06"
-  },
-  {
-    "task": "go to shop",
-    "time": "06:00"
-  },
-  {
-    "task": "go to shop",
-    "time": "06:03"
-  },
-  {
-    "task": "go and eat",
-    "time": "18:00"
-  },
-  {
-    "task": "eat and go",
-    "time": "17:00"
-  },
-  {
-    "task": "eat eat",
-    "time": "06:06"
-  }
+    {
+        "task": "buy sugar",
+        "time": "19:00"
+    },
+    {
+        "task": "do pod",
+        "time": "02:00"
+    },
+    {
+        "task": "buy chocolate",
+        "time": "07:30"
+    },
+    {
+        "task": "buy can",
+        "time": "09:00"
+    },
+    {
+        "task": "buying grocery",
+        "time": "16:00"
+    },
+    {
+        "task": "buy chips",
+        "time": "04:00"
+    },
+    {
+        "task": "buy crackers",
+        "time": "04:50"
+    },
+    {
+        "task": "charge phone",
+        "time": "525:00"
+    }
 ]
