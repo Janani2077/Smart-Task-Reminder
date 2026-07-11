@@ -1,34 +1,26 @@
 [
     {
-        "task": "buy sugar",
-        "time": "19:00"
-    },
-    {
-        "task": "do pod",
-        "time": "02:00"
-    },
-    {
-        "task": "buy chocolate",
-        "time": "07:30"
-    },
-    {
         "task": "buy can",
         "time": "09:00"
     },
     {
-        "task": "buying grocery",
-        "time": "16:00"
+        "task": "give reminder",
+        "time": "13:02"
     },
     {
-        "task": "buy chips",
-        "time": "04:00"
+        "task": "give reminder correctly",
+        "time": "13:02"
     },
     {
-        "task": "buy crackers",
-        "time": "04:50"
+        "task": "hello",
+        "time": "13:03"
     },
     {
-        "task": "charge phone",
-        "time": "525:00"
+        "task": "study foreign pt",
+        "time": "02:20"
+    },
+    {
+        "task": "give me a reminder",
+        "time": "02:00"
     }
 ]
